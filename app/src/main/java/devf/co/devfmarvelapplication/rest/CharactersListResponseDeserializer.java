@@ -34,7 +34,7 @@ public class CharactersListResponseDeserializer implements JsonDeserializer<Char
         return response;
     }
 
-    private ArrayList<Character> extractCharactersFromJson (JsonArray charactersArray) {
+    private ArrayList<Character> extractCharactersFromJson(JsonArray charactersArray) {
         ArrayList<Character> characters = new ArrayList<>();
 
         for (int i = 0; i < charactersArray.size(); i++) {

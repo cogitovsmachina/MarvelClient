@@ -16,7 +16,7 @@ public interface MarvelApiService {
                                   @Query(Constants.API_KEY_PARAM) String apiKey,
                                   @Query(Constants.TS_PARAM) long ts,
                                   @Query(Constants.HASH_PARAM) String hash,
-                                   Callback<CharactersListResponse> callback);
+                                  Callback<CharactersListResponse> callback);
 
     @GET(Constants.HERO_DETAIL_URL)
     public void requestHeroDetail(
@@ -44,6 +44,4 @@ public interface MarvelApiService {
                                   @Query(Constants.TS_PARAM) long ts,
                                   @Query(Constants.HASH_PARAM) String hash,
                                   Callback<ComicsListResponse> callback);
-
-
 }

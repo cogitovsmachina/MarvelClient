@@ -27,29 +27,25 @@ public class CharacterDetailActivity extends ActionBarActivity {
         }
     }
 
-    private void fragmentSwitcher(int fragmentId, Bundle args){
-
-        switch (fragmentId){
+    private void fragmentSwitcher(int fragmentId, Bundle args) {
+        switch (fragmentId) {
             case HERO_DETAIL_FRAGMENT:
                 setFragment(CharacterDetailFragment.getInstance(args), HERO_DETAIL_FRAGMENT_TAG);
-            break;
+                break;
         }
     }
 
-    private void setFragment(Fragment wich, String tag){
+    private void setFragment(Fragment which, String tag) {
         getSupportFragmentManager().beginTransaction()
-                .replace(R.id.detailContainer, wich, tag)
+                .replace(R.id.detailContainer, which, tag)
                 .commit();
     }
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
 
-        switch (id){
+        switch (id) {
             case android.R.id.home:
                 finish();
                 break;

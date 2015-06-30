@@ -32,7 +32,6 @@ public class MarvelApiClient {
 
     private MarvelApiClient(Context context) {
         this.context = context;
-
         //Build the response parser
         Gson gsonConf = new GsonBuilder()
                 .registerTypeAdapter(CharactersListResponse.class , new CharactersListResponseDeserializer())
