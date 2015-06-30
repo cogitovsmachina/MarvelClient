@@ -94,7 +94,6 @@ public class NavigationDrawerFragment extends Fragment {
 
         itemOptionNavDras.add(new ItemOptionNavDra(R.mipmap.ic_character, R.string.title_section1));
         itemOptionNavDras.add(new ItemOptionNavDra(R.mipmap.ic_comics, R.string.title_section2));
-        itemOptionNavDras.add(new ItemOptionNavDra(R.mipmap.ic_series, R.string.title_section3));
 
         return itemOptionNavDras;
 
@@ -148,8 +147,7 @@ public class NavigationDrawerFragment extends Fragment {
     }
 
 
-    private void enableHomeButton ()
-    {
+    private void enableHomeButton() {
         ActionBar actionBar = getActionBar();
         actionBar.setDisplayHomeAsUpEnabled(true);
         actionBar.setHomeButtonEnabled(true);

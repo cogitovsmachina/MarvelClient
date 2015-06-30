@@ -68,9 +68,6 @@ public class MainActivity extends ActionBarActivity implements NavigationDrawerF
                 case 1:
                     fragment = new ComicsFragment();
                     break;
-                case 2:
-                    fragment = new CreatorsFragment();
-                    break;
             }
 
             getSupportFragmentManager().beginTransaction()
@@ -88,9 +85,6 @@ public class MainActivity extends ActionBarActivity implements NavigationDrawerF
                 break;
             case 1:
                 mTitle = getString(R.string.title_section2);
-                break;
-            case 2:
-                mTitle = getString(R.string.title_section3);
                 break;
         }
     }
