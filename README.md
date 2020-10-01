@@ -1,2 +1,2 @@
 # DevFAndroidProject
-Android project for DevF workshop
+Android project for legendery DevF workshop
